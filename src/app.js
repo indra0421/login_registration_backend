@@ -103,6 +103,6 @@ app.post("/login", async (req, res) => {
     }
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 4500, () => {
     console.log(`connection is setup at port ${port}`);
 })
